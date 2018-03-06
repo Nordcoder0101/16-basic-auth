@@ -1,0 +1,38 @@
+{
+  "name": "lab-greg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "debug": "^3.1.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "http-errors": "^1.6.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.9",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "jest": "^22.4.2",
+    "superagent": "^3.8.2"
+    
+  },
+  "scripts": {
+    "test": "DEBUG=cfgram* jest",
+    "start": "DEBUG=cfgram* node server.js",
+    "eslint": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
