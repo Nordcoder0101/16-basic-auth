@@ -15,7 +15,7 @@ exports.serverOn = function(server, done) {
     return;
   }
   done();
-}
+};
 
 exports.serverOff = function(server, done) {
   if (server.isRunning) {
@@ -29,4 +29,4 @@ exports.serverOff = function(server, done) {
     return;
   }
   done();
-}
+};

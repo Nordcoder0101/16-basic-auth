@@ -21,8 +21,8 @@ module.exports = function(req, res, next) {
 
   req.auth = {
     username: authArr[0],
-    password: authArr[1]
-  }
+    password: authArr[1],
+  };
 
   if (!req.auth.username) {
     return next(createError(401, 'username required'));
@@ -33,4 +33,4 @@ module.exports = function(req, res, next) {
   }
 
   next();
-}
+};

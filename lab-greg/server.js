@@ -8,6 +8,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 
 const authRouter = require('./route/auth-router.js');
+const galleryRouter = require('./route/gallery-router.js');
 const error = require('./lib/error-middleware.js');
 
 dotenv.load();
@@ -20,10 +21,11 @@ app.use(cors());
 app.use(morgan('dev'));
 
 app.use(authRouter);
+app.use(galleryRouter);
 app.use(error);
 
 const server = module.exports = app.listen(PORT, () => {
-    debug(`server up: ${PORT}`);
+  debug(`server up: ${PORT}`);
 });
 
 server.isRunning = true;
