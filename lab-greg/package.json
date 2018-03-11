@@ -26,7 +26,7 @@
     "superagent": "^3.8.2"
   },
   "scripts": {
-    "test": "DEBUG=cfgram* jest",
+    "test": "DEBUG=cfgram* jest -i",
     "start": "DEBUG=cfgram* node server.js",
     "eslint": "eslint"
   },
