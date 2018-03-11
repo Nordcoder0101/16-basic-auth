@@ -20,5 +20,12 @@ mongoose
 jsonwebtoken
 debug
 
+### Environmental variables
+
+PORT ='3000'
+MONGODB_URI='mongodb://localhost/instaclone'
+APP_SECRET='shushyshushy'
+
+
 ### Author
 Greg Nordeng 2018
